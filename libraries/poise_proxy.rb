@@ -233,7 +233,7 @@ class Chef
     end
 
     def enable_vhost
-      apache_site "#{new_resource.proxy_name}.conf" do
+      apache_site "#{new_resource.proxy_name}" do
         enable true
       end
     end
